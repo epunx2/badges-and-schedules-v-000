@@ -16,5 +16,13 @@ end
 
 
 def assign_rooms(array)
-  new_array
+  room_assign = []
+  counter = 0
+  room = 1
+  array.each do |e|
+    room_assign[counter] = "Hello, #{e}! You'll be assigned to room #{room}!"
+    counter += 1
+    room += 1
+  end
+  return room_assign
 end
